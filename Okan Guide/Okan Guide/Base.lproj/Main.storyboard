@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6lX-fQ-sbU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Okan_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İş Yaşamına En Yakın Üniversite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBP-wz-IPa">
+                                <rect key="frame" x="24" y="431.5" width="366" height="33"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="26"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWm-d1-GRe">
+                                <rect key="frame" x="103" y="608" width="208" height="46.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Giriş Yap" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        <color key="strokeColor" systemColor="linkColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="27"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="mainButtonclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6f6-eK-TTw"/>
+                                    <segue destination="IU2-ak-QFc" kind="show" id="YlV-ai-9Tu"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="okan" translatesAutoresizingMaskIntoConstraints="NO" id="2fB-GG-REB">
+                                <rect key="frame" x="-26" y="88" width="466" height="311"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.070554596041026832" green="0.068179417640558126" blue="0.30709522285567004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fB-GG-REB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5vW-7a-L8t"/>
+                            <constraint firstItem="uWm-d1-GRe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="FOB-Jb-YYJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uWm-d1-GRe" secondAttribute="bottom" constant="207.5" id="SwR-ja-RA2"/>
+                            <constraint firstItem="2fB-GG-REB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-46" id="TBh-Vw-91G"/>
+                            <constraint firstItem="aBP-wz-IPa" firstAttribute="centerX" secondItem="uWm-d1-GRe" secondAttribute="centerX" id="WcV-vB-41t"/>
+                            <constraint firstItem="aBP-wz-IPa" firstAttribute="top" secondItem="2fB-GG-REB" secondAttribute="bottom" constant="32.5" id="jw9-UF-2u2"/>
+                            <constraint firstItem="2fB-GG-REB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qcB-Kp-eJD"/>
+                            <constraint firstItem="2fB-GG-REB" firstAttribute="centerX" secondItem="aBP-wz-IPa" secondAttribute="centerX" id="ws7-qP-PR0"/>
+                            <constraint firstItem="aBP-wz-IPa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xAW-zQ-0AD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NRw-Rn-7zM"/>
+                    <connections>
+                        <outlet property="mainLabel" destination="aBP-wz-IPa" id="cYN-xY-ZdY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937.68115942028987" y="66.964285714285708"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="5Ul-Be-x7a">
+            <objects>
+                <viewController id="IU2-ak-QFc" customClass="SecondViewController" customModule="Okan_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dto-AU-MZb" customClass="SecondView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4jI-PL-sWB">
+                                <rect key="frame" x="54" y="488" width="306" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zC9-lV-asL">
+                                <rect key="frame" x="134" y="595" width="146" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="j1t-fW-dc4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kaydet" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.82909227730000001" green="0.83305333319999997" blue="0.79372828790000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="strokeColor" red="0.080604337159999997" green="0.29075351360000001" blue="0.5520915985" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="31"/>
+                                    <color key="baseForegroundColor" systemColor="tintColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveClicked:" destination="IU2-ak-QFc" eventType="touchUpInside" id="ezF-gP-hOY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcg-nz-5XP">
+                                <rect key="frame" x="282" y="813" width="104" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Misafir Girişi"/>
+                                <connections>
+                                    <segue destination="sy3-WP-Wnb" kind="show" id="C9z-f4-0qt"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="okan" translatesAutoresizingMaskIntoConstraints="NO" id="7GT-wH-wc5">
+                                <rect key="frame" x="-130" y="88" width="674" height="303"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="674" id="aLd-bY-8Us"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İsminizi Yazmak İstemiyorsanız" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPc-Ce-Wit">
+                                <rect key="frame" x="46" y="818" width="234" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.82909227730000001" green="0.83305333319999997" blue="0.79372828790000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size Nasıl Hitap Edebiliriz?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5J-pq-oFd">
+                                <rect key="frame" x="20" y="433" width="394" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wAz-8o-uLo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="28"/>
+                                <color key="textColor" red="0.82909227730000001" green="0.83305333319999997" blue="0.79372828790000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Imm-sv-Rpi"/>
+                        <color key="backgroundColor" red="0.070554596040000001" green="0.068179417640000003" blue="0.30709522290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4jI-PL-sWB" firstAttribute="centerX" secondItem="zC9-lV-asL" secondAttribute="centerX" id="0oF-sy-gvD"/>
+                            <constraint firstItem="zC9-lV-asL" firstAttribute="top" secondItem="4jI-PL-sWB" secondAttribute="bottom" constant="73" id="B9S-fO-rTz"/>
+                            <constraint firstItem="zC9-lV-asL" firstAttribute="trailing" secondItem="jPc-Ce-Wit" secondAttribute="trailing" id="DES-4V-Yb4"/>
+                            <constraint firstItem="4jI-PL-sWB" firstAttribute="top" secondItem="e5J-pq-oFd" secondAttribute="bottom" constant="25" id="I1M-6c-JKA"/>
+                            <constraint firstItem="4jI-PL-sWB" firstAttribute="leading" secondItem="Imm-sv-Rpi" secondAttribute="leading" constant="54" id="L04-BG-YRK"/>
+                            <constraint firstItem="7GT-wH-wc5" firstAttribute="top" secondItem="Imm-sv-Rpi" secondAttribute="top" id="RJX-e6-Jgj"/>
+                            <constraint firstItem="jPc-Ce-Wit" firstAttribute="leading" secondItem="Imm-sv-Rpi" secondAttribute="leading" constant="46" id="STd-gK-jNK"/>
+                            <constraint firstItem="rcg-nz-5XP" firstAttribute="leading" secondItem="jPc-Ce-Wit" secondAttribute="trailing" constant="2" id="TMz-Va-FQ0"/>
+                            <constraint firstItem="jPc-Ce-Wit" firstAttribute="centerY" secondItem="rcg-nz-5XP" secondAttribute="centerY" id="bdb-MW-y1Y"/>
+                            <constraint firstItem="e5J-pq-oFd" firstAttribute="leading" secondItem="dto-AU-MZb" secondAttribute="leadingMargin" id="fH0-DH-Z1a"/>
+                            <constraint firstItem="7GT-wH-wc5" firstAttribute="centerX" secondItem="dto-AU-MZb" secondAttribute="centerX" id="nVP-0k-uq1"/>
+                            <constraint firstItem="Imm-sv-Rpi" firstAttribute="bottom" secondItem="rcg-nz-5XP" secondAttribute="bottom" constant="18" id="olJ-hr-caC"/>
+                            <constraint firstItem="7GT-wH-wc5" firstAttribute="centerX" secondItem="4jI-PL-sWB" secondAttribute="centerX" id="plh-Qu-xHb"/>
+                            <constraint firstItem="e5J-pq-oFd" firstAttribute="trailing" secondItem="Imm-sv-Rpi" secondAttribute="trailing" id="rjS-KM-G41"/>
+                            <constraint firstItem="e5J-pq-oFd" firstAttribute="centerY" secondItem="dto-AU-MZb" secondAttribute="centerY" id="sTb-AN-va6"/>
+                            <constraint firstItem="e5J-pq-oFd" firstAttribute="top" secondItem="7GT-wH-wc5" secondAttribute="bottom" constant="42" id="yxo-m4-nbu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Beg-Nw-enN"/>
+                    <connections>
+                        <outlet property="qLabel" destination="e5J-pq-oFd" id="SuC-F2-7JS"/>
+                        <outlet property="textField" destination="4jI-PL-sWB" id="D4X-kI-9nN"/>
+                        <segue destination="sy3-WP-Wnb" kind="show" identifier="toThirdVC" id="Cih-kL-icZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FWR-P7-Spw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1595.6521739130435" y="66.964285714285708"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="bXH-S7-zTF">
+            <objects>
+                <viewController id="sy3-WP-Wnb" customClass="ThirdViewController" customModule="Okan_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IVL-gY-NEB" customClass="Th">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="OkanUniversityMainMenuBlank.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7LQ-ih-sIu">
+                                <rect key="frame" x="0.0" y="-87" width="414" height="1184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoşgeldin," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyP-DT-xQ8">
+                                <rect key="frame" x="6" y="319" width="125" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbb-cm-SXX">
+                                <rect key="frame" x="139" y="319" width="229" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sana Nasıl Yardımcı Olabiliriz ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLc-12-xUa">
+                                <rect key="frame" x="6" y="357" width="313" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.82909227730000001" green="0.83305333319999997" blue="0.79372828790000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HxW-Q8-VM6">
+                                <rect key="frame" x="0.0" y="392" width="206" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Fakülte &amp; Yüksekokul">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="fakTiklandi:" destination="sy3-WP-Wnb" eventType="touchUpInside" id="3RJ-kM-Sw0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxt-yi-Cm3">
+                                <rect key="frame" x="208" y="392" width="206" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Okan'lı Olmak">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="okanTiklendi:" destination="sy3-WP-Wnb" eventType="touchUpInside" id="MIr-jz-tad"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ox8-o9-SAZ">
+                                <rect key="frame" x="0.0" y="505" width="206" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="YKS Ücretleri">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="yksTiklendi:" destination="sy3-WP-Wnb" eventType="touchUpInside" id="mqI-By-ePe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xq-vD-NMg">
+                                <rect key="frame" x="208" y="505" width="206" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="DGS Ücret &amp; Bursları">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="DGSTiklendi:" destination="sy3-WP-Wnb" eventType="touchUpInside" id="KkI-L3-3x0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTy-Uj-KWw">
+                                <rect key="frame" x="0.0" y="618" width="206" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Kampüs Ziyareti">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="KampusTiklendi:" destination="sy3-WP-Wnb" eventType="touchUpInside" id="4Sx-PH-gKI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJa-Hg-cUR">
+                                <rect key="frame" x="208" y="618" width="206" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Burslar">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="burslarTiklendi:" destination="sy3-WP-Wnb" eventType="touchUpInside" id="U3t-sG-sp5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRF-MN-hiy">
+                                <rect key="frame" x="208" y="732" width="206" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="İletişim">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="iletisimTiklendi:" destination="sy3-WP-Wnb" eventType="touchUpInside" id="DVt-Of-3Td"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXz-RD-mdE">
+                                <rect key="frame" x="6" y="732" width="206" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="S.S.S">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="SSSTiklendi:" destination="sy3-WP-Wnb" eventType="touchUpInside" id="ycX-2d-NVD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jzq-i3-VOW"/>
+                        <color key="backgroundColor" red="0.070554596040000001" green="0.068179417640000003" blue="0.30709522290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FyP-DT-xQ8" firstAttribute="leading" secondItem="Jzq-i3-VOW" secondAttribute="leading" constant="6" id="4S9-IA-Dv5"/>
+                            <constraint firstItem="FyP-DT-xQ8" firstAttribute="baseline" secondItem="qbb-cm-SXX" secondAttribute="baseline" id="Cnm-CX-htC"/>
+                            <constraint firstItem="FyP-DT-xQ8" firstAttribute="baseline" secondItem="qbb-cm-SXX" secondAttribute="firstBaseline" id="Ope-O5-Hxe"/>
+                            <constraint firstItem="qbb-cm-SXX" firstAttribute="leading" secondItem="FyP-DT-xQ8" secondAttribute="trailing" id="Tz9-GH-Weg"/>
+                            <constraint firstItem="FyP-DT-xQ8" firstAttribute="top" secondItem="Jzq-i3-VOW" secondAttribute="top" constant="231" id="fPy-zb-HtM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WzD-HX-RWr"/>
+                    <connections>
+                        <outlet property="userNameLabel" destination="qbb-cm-SXX" id="O2I-Ym-JPd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gmn-Tc-API" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2260.8695652173915" y="66.964285714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FZ7-d3-eAC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6lX-fQ-sbU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wrz-kj-9dZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uNk-if-sPM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7tG-i1-WeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="67"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Cih-kL-icZ"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="OkanUniversityMainMenuBlank.jpg" width="787" height="1576"/>
+        <image name="okan" width="2000" height="1541"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
